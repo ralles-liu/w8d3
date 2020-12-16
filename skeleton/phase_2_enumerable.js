@@ -9,6 +9,7 @@
 // };
 
 // [1, 2, 3].myEach(thisIsACallback);
+
 //our version of map
 // Array.prototype.myMap = function(callback) {
 //     let new_arr = [];

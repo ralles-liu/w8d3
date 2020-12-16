@@ -19,7 +19,7 @@ Array.prototype.bubbleSort = function() {
 };
 
 
-// console.log([11,3,5,6,2,34,6].bubbleSort());
+console.log([11,3,5,6,2,34,6].bubbleSort());
 
 
 String.prototype.substrings = function() {
