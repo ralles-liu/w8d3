@@ -46,3 +46,47 @@ function exponent(base, exp) {
 }
 
 console.log(exponent(2, 6));
+
+
+function fibonacci(n) {
+    if (n===0) {
+        return [];
+    }
+
+    if (n===1) {
+        return [1];
+    }
+
+    if (n===2) {
+        return [1,1];
+    }
+
+    let previous_fib = fibonacci(n-1);
+
+    let next_num = previous_fib[previous_fib.length - 1] + previous_fib[previous_fib.length - 2];
+
+    previous_fib.push(next_num);
+
+    return previous_fib;
+
+}
+
+
+console.log(fibonacci(7));
+
+
+
+
+function deepDup(arr) {
+    let new_arr = [];
+    if (!Array.isArray(arr)) {
+        return arr;
+    }
+
+    for (let i=0; i < arr.length; i++) {
+        new_arr.push(deepDup(arr[i]));
+    }
+    return new_arr;
+}
+
+console.log(deepDup([[1,2],[3,4]]));
